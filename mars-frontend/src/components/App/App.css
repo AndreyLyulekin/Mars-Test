@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .bgPosLeft {
@@ -20,3 +21,23 @@
   background-position: right top;
   transition: all 0.5s ease-in-out;
 }
+
+@keyframes bgRightToLeft {
+  0% {
+    background-position: right top;
+  }
+  100% {
+    background-position: left top;
+  }
+}
+
+/* .app__mistBg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url('../../images/Mist.png');
+  background-position: right top;
+  offset: 0;
+  animation: bgRightToLeft 3s ease-in-out;
+  z-index: 0;
+} */

@@ -10,16 +10,15 @@ export default function Promo() {
       />
       <div className='promo__container-text'>
         <span className='promo__description'>Точка назначения:</span>
-
-        <div className='holder'>
+        <div className='promo__holder'>
           <video
-            className='video'
+            className='promo__video'
             autoPlay
             loop
             muted
             src={bgTextClip}></video>
-          <div className='section'>
-            <h1 className='mars'>MAPC</h1>
+          <div className='promo__mars-text-conteiner'>
+            <h1 className='promo__mars-text'>MAPC</h1>
           </div>
         </div>
       </div>

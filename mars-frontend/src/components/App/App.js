@@ -32,6 +32,7 @@ export default function App() {
   }, []);
   return (
     <div className={`app ${starsBgPosition[bgPosition]}`}>
+      <div className='app__mistBg'></div>
       <Header />
       <Promo />
     </div>

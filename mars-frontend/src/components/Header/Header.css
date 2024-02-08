@@ -5,6 +5,7 @@
   max-width: calc(100% - 240px);
   padding: 30px 120px 0;
   max-height: 40px;
+  z-index: 1;
 }
 .header__menu-nav {
   display: flex;

@@ -5,5 +5,6 @@ import logo from '../images/Mars-logo.svg';
 import { menuItems } from '../utils/mock';
 import { starsBgPosition } from '../utils/mock';
 import bgTextClip from '../images/Mars-bg-clip-text.m4v';
+import Booking from './Booking/Booking';
 
-export { Header, Promo, arrow, logo, menuItems, starsBgPosition, bgTextClip };
+export { Header, Promo, arrow, logo, menuItems, starsBgPosition, bgTextClip, Booking };

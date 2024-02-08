@@ -24,14 +24,14 @@
 
 @keyframes bgRightToLeft {
   0% {
-    background-position: right top;
+    background-position: left top;
   }
   100% {
-    background-position: left top;
+    background-position: right top;
   }
 }
 
-/* .app__mistBg {
+.app__mistBg {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -40,4 +40,5 @@
   offset: 0;
   animation: bgRightToLeft 3s ease-in-out;
   z-index: 0;
-} */
+  filter: brightness(0.5);
+}

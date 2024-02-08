@@ -29,7 +29,7 @@ export default function App() {
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('mousemove', handleMouseMoveWithDelay);
     };
-  }, []);
+  }, [windowWidth]);
   return (
     <div className={`app ${starsBgPosition[bgPosition]}`}>
       <div className='app__mistBg'></div>

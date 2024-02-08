@@ -4,5 +4,6 @@ import arrow from '../images/Arrow-down-promo.svg';
 import logo from '../images/Mars-logo.svg';
 import { menuItems } from '../utils/mock';
 import { starsBgPosition } from '../utils/mock';
+import bgTextClip from '../images/Mars-bg-clip-text.m4v';
 
-export { Header, Promo, arrow, logo, menuItems, starsBgPosition };
+export { Header, Promo, arrow, logo, menuItems, starsBgPosition, bgTextClip };

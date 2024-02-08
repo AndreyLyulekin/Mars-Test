@@ -10,13 +10,13 @@
 
 .bgPosLeft {
   background-position: left top;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .bgPosCenter {
   background-position: center top;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .bgPosRight {
   background-position: right top;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }

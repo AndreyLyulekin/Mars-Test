@@ -3,7 +3,7 @@ import { Header, Promo, starsBgPosition } from '../index';
 
 export default function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth / 3);
-  const [bgPosition, setBgPosition] = useState(1);
+  const [bgPosition, setBgPosition] = useState(0);
 
   useEffect(() => {
     const delay = 100;

@@ -1,0 +1,9 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@import './vendor/normalize.css';
+@import './util-styles/styles.css';
+@import './components/App/App.css';
+@import './components/Header/Header.css';
+@import './components/Promo/Promo.css';

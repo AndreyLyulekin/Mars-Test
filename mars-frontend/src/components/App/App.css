@@ -1,0 +1,22 @@
+.app {
+  width: 100%;
+  background-image: url('../../images/Space-Stars-BG.png');
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bgPosLeft {
+  background-position: left top;
+  transition: all 0.3s ease-in-out;
+}
+.bgPosCenter {
+  background-position: center top;
+  transition: all 0.3s ease-in-out;
+}
+.bgPosRight {
+  background-position: right top;
+  transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,8 @@
+.util__link:hover {
+  filter: brightness(0.7);
+  cursor: pointer;
+}
+.util__button:hover {
+  filter: brightness(0.8);
+  cursor: pointer;
+}

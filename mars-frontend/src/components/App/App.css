@@ -2,24 +2,45 @@
   width: 100%;
   background-image: url('../../images/Space-Stars-BG.png');
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
-  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
 }
 
 .bgPosLeft {
   background-position: left top;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .bgPosCenter {
   background-position: center top;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .bgPosRight {
   background-position: right top;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+@-webkit-keyframes bgRightToLeft {
+  0% {
+    background-position: left top;
+  }
+  100% {
+    background-position: right top;
+  }
 }
 
 @keyframes bgRightToLeft {
@@ -38,7 +59,9 @@
   background-image: url('../../images/Mist.png');
   background-position: right top;
   offset: 0;
+  -webkit-animation: bgRightToLeft 3s ease-in-out;
   animation: bgRightToLeft 3s ease-in-out;
   z-index: 0;
+  -webkit-filter: brightness(0.5);
   filter: brightness(0.5);
 }

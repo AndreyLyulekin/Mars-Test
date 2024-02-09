@@ -1,6 +1,10 @@
 import { logo, menuItems } from '../index';
 
-export default function Header() {
+export default function Header({ setIsBookingOpen }) {
+  const handleCLick = () => {
+    setIsBookingOpen((prev) => !prev);
+  };
+
   return (
     <header className='header'>
       <img
@@ -22,7 +26,11 @@ export default function Header() {
             </li>
           ))}
         </ul>
-        <button className='header__menu_btn-buy'>{menuItems[1].text}</button>
+        <button
+          onClick={handleCLick}
+          className='header__menu_btn-buy'>
+          {menuItems[1].text}
+        </button>
       </nav>
     </header>
   );

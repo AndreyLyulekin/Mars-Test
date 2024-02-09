@@ -1,0 +1,44 @@
+.booking {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background-color: #f2e1c2;
+  padding: 88px 120px 0;
+}
+.booking__header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.booking__title {
+  font-family: 'Bebas Neue';
+  font-weight: 700;
+  font-size: 114px;
+  line-height: 114px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #262526;
+  width: 50%;
+  margin: 0;
+}
+.booking__close {
+  background-image: url('../../images/close.svg');
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  border: none;
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+.booking__form {
+  margin-top: 95px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+}

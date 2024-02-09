@@ -1,9 +1,27 @@
+@-webkit-keyframes growHeight {
+  0% {
+    height: 5px;
+  }
+  100% {
+    height: 605px;
+  }
+}
+
 @keyframes growHeight {
   0% {
     height: 5px;
   }
   100% {
     height: 605px;
+  }
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -17,7 +35,10 @@
 }
 
 .promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  padding: 0 125px 0 116px;
   margin-top: 120px;
   height: calc(1024px - 190px);
   width: 100%;
@@ -27,11 +48,13 @@
 .promo__bgArrow {
   height: 5px;
   width: 10px;
+  -webkit-animation: growHeight 1s forwards;
   animation: growHeight 1s forwards;
 }
 
 .promo__container-text {
   margin-left: 25px;
+  padding-top: 14px;
 }
 
 .promo__description {
@@ -41,6 +64,7 @@
   text-transform: uppercase;
   color: #f23207;
   opacity: 0;
+  -webkit-animation: opacity 1s forwards;
   animation: opacity 1s forwards;
 }
 
@@ -50,8 +74,9 @@
 }
 
 .promo__video {
-  width: 100%;
+  width: 99%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .promo__mars-text-conteiner {
@@ -62,14 +87,18 @@
   color: #fff;
   mix-blend-mode: multiply;
   background-clip: content-box;
+  width: 100%;
 }
 .promo__mars-text {
   margin: 0;
   font-weight: 700;
   font-size: 715px;
   line-height: 715px;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   text-align: center;
   color: #fff;
   font-family: 'Bebas Neue';
+  -webkit-transform: translate(-41px, -80px);
+  -ms-transform: translate(-41px, -80px);
+  transform: translate(-41px, -80px);
 }

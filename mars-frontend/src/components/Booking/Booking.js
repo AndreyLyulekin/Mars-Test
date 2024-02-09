@@ -7,13 +7,13 @@ export default function Booking({ setIsBookingOpen }) {
     setIsBookingOpen((prev) => !prev);
   };
 
-  useEffect(() => {
-    const handleKeyDown = (event) => {
-      if (event.key === 'Escape') {
-        handleClick();
-      }
-    };
+  const handleKeyDown = (event) => {
+    if (event.key === 'Escape') {
+      handleClick();
+    }
+  };
 
+  useEffect(() => {
     document.addEventListener('keydown', handleKeyDown);
 
     return () => {

@@ -5,9 +5,11 @@ export default function BookingArticle({ item }) {
 
   const handleInputChange = (event) => {
     if (event.target.type === 'number') {
-      event.target.value >= 1 ? setInput(event.target.value) : setInput((prev) => prev + 1);
+      event.target.value >= 1 ? setInput(event.target.value) : setInput((prev) => prev);
     }
-    setInput(event.target.value);
+    if (event.target.type === 'date') {
+      setInput(event.target.value);
+    }
   };
 
   return (

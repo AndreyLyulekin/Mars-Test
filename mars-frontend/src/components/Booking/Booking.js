@@ -30,10 +30,10 @@ export default function Booking({ setIsBookingOpen }) {
           className='booking__close util__button'></button>
       </div>
       <form className='booking__form'>
-        {popupInputs.map((item, ind) => (
+        {popupInputs.map((item, index) => (
           <BookingArticle
             item={item}
-            key={ind}
+            key={index}
           />
         ))}
         <button

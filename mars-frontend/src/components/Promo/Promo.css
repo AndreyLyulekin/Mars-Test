@@ -21,7 +21,7 @@
     height: 5px;
   }
   100% {
-    height: 515px;
+    height: 500px;
   }
 }
 
@@ -48,7 +48,7 @@
   display: -ms-flexbox;
   display: flex;
   padding: 0 125px 0 116px;
-  margin-top: 120px;
+  margin-top: 90px;
   height: calc(1024px - 190px);
   width: 100%;
   max-width: calc(100% - 200px);
@@ -77,43 +77,31 @@
   animation: opacity 1s forwards;
 }
 
-.promo__holder {
+.wrapper {
   position: relative;
-  mix-blend-mode: lighten;
   width: 100%;
+  height: 60%;
+  margin: 0 auto;
 }
-
-.promo__video {
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -webkit-transform: translate(0, 3px);
-  -ms-transform: translate(0, 3px);
-  transform: translate(0, 3px);
+.clipped-video {
+  width: 100%;
+  height: auto;
+  -webkit-clip-path: url(#text-overlay);
+  clip-path: url(#text-overlay);
 }
-.promo__mars-text-conteiner {
-  text-align: center;
+.clipped-svg {
+  display: block;
   position: absolute;
-  inset: 0;
-  background: black;
-  color: #fff;
-  mix-blend-mode: multiply;
-  background-clip: content-box;
-  width: 100%;
+  top: 0;
 }
-.promo__mars-text {
-  margin: 0;
+.clipped-text {
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  transform: translate(-24px, -585px);
   font-weight: 700;
   font-size: 715.25px;
   line-height: 715.25px;
   letter-spacing: -0.02em;
-  text-align: center;
-  color: #fff;
-  font-family: 'Bebas Neue';
-  -webkit-transform: translate(-81px, -80px);
-  -ms-transform: translate(-81px, -80px);
-  transform: translate(-81px, -80px);
-  user-select: none;
 }
 
 @media screen and (min-width: 1441px) {
@@ -128,23 +116,25 @@
     padding: 0;
     justify-content: center;
   }
-
-  .promo__video {
-    transform: translate(5px, 5px);
-  }
 }
 
 @media screen and (max-width: 1439px) {
-  .promo__video {
-    transform: translate(5px, 5px);
-  }
-  .promo__mars-text {
-    transform: translate(-195px, -45px);
-    font-size: 515px;
-    line-height: 515px;
+  .promo {
+    justify-content: center;
+    max-width: 100%;
+    padding: 0;
   }
   .promo__bgArrow {
     -webkit-animation: growHeightMediumPc 1s forwards;
     animation: growHeightMediumPc 1s forwards;
+  }
+  .clipped-text {
+    transform: translate(-24px, -440px);
+    font-size: 550px;
+    line-height: 550px;
+  }
+
+  .promo__container-text {
+    width: 70%;
   }
 }

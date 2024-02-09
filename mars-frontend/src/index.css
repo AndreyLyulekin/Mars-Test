@@ -14,3 +14,4 @@ body {
 @import './components/Promo/Promo.css';
 @import './components/Booking/Booking.css';
 @import './components/BookingArticle/BookingArticle.css';
+@import './components/ContextMenu/ContextMenu.css';

@@ -1,8 +1,15 @@
-import { logo, menuItems } from '../index';
+import { useState } from 'react';
+import { logo, menuItems, ContextMenu } from '../index';
 
 export default function Header({ setIsBookingOpen }) {
-  const handleCLick = () => {
+  const [isContextMenuOpened, setIsContextMenuOpened] = useState(false);
+
+  const handleBuyCLick = () => {
     setIsBookingOpen((prev) => !prev);
+  };
+
+  const handleBurgerCLick = () => {
+    setIsContextMenuOpened(true);
   };
 
   return (
@@ -14,7 +21,7 @@ export default function Header({ setIsBookingOpen }) {
       />
       <nav className='header__menu-nav'>
         <ul className='header__menu-ul'>
-          {menuItems[0].pages.map((linkPage, i) => (
+          {menuItems.map((linkPage, i) => (
             <li
               className='header__menu-item'
               key={i}>
@@ -27,11 +34,21 @@ export default function Header({ setIsBookingOpen }) {
           ))}
         </ul>
         <button
-          onClick={handleCLick}
+          onClick={handleBuyCLick}
           className='header__menu_btn-buy'>
-          {menuItems[1].text}
+          Купить билеты
         </button>
       </nav>
+      <button
+        className='header__burger util__button'
+        onClick={handleBurgerCLick}
+      />
+      {isContextMenuOpened && (
+        <ContextMenu
+          isContextMenuOpened={isContextMenuOpened}
+          setIsContextMenuOpened={setIsContextMenuOpened}
+        />
+      )}
     </header>
   );
 }

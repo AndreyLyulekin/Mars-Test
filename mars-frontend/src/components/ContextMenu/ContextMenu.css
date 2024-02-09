@@ -1,0 +1,46 @@
+.contextMenu__overlay {
+  position: absolute;
+  inset: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.context__menu {
+  position: absolute;
+  right: 0;
+  width: 50vw;
+  background-image: url(../../images/Space-Stars-BG.png);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+}
+.context__menu_opened {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.contextMenu__close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  background-image: url('../../images/close.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contextMenu__nav {
+  padding-top: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .contextMenu__close {
+    top: 20px;
+    right: 20px;
+  }
+}

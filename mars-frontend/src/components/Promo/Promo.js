@@ -10,16 +10,30 @@ export default function Promo() {
       />
       <div className='promo__container-text'>
         <span className='promo__description'>Точка назначения:</span>
-        <div className='promo__holder'>
+        <div className='wrapper'>
           <video
-            className='promo__video'
-            autoPlay
-            loop
+            className='clipped-video'
             muted
-            src={bgTextClip}></video>
-          <div className='promo__mars-text-conteiner'>
-            <h1 className='promo__mars-text'>MAPC</h1>
-          </div>
+            loop
+            autoPlay>
+            <source src={bgTextClip}></source>
+          </video>
+          <svg
+            className='clipped-svg'
+            height='100%'
+            width='100%'>
+            <clipPath
+              id='text-overlay'
+              width='100%'
+              height='100%'>
+              <text
+                className='clipped-text'
+                id='title'
+                dy='1.58em'>
+                MAPC
+              </text>
+            </clipPath>
+          </svg>
         </div>
       </div>
     </section>

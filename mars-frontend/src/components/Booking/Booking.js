@@ -27,7 +27,8 @@ export default function Booking({ setIsBookingOpen }) {
         <h2 className='booking__title'>Бронирование билетов</h2>
         <button
           onClick={handleClick}
-          className='booking__close util__button'></button>
+          className='booking__close util__button'
+        />
       </div>
       <form className='booking__form'>
         {popupInputs.map((item, index) => (

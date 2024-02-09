@@ -5,6 +5,7 @@ export default function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth / 3);
   const [bgPosition, setBgPosition] = useState(0);
   const [isBookingOpen, setIsBookingOpen] = useState(false);
+  const [isPageLoading, setIsPageLoading] = useState(false);
 
   useEffect(() => {
     const delay = 100;
@@ -34,9 +35,9 @@ export default function App() {
   return (
     <div className={`app ${starsBgPosition[bgPosition]}`}>
       <div className='app__mistBg' />
-      <Header setIsBookingOpen={setIsBookingOpen} />
+      <Header onPurchaseClick={setIsBookingOpen} />
       <Promo />
-      {isBookingOpen && <Booking setIsBookingOpen={setIsBookingOpen} />}
+      {isBookingOpen && <Booking onPurchaseClick={setIsBookingOpen} />}
     </div>
   );
 }

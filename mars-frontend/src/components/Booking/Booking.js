@@ -2,9 +2,9 @@ import { useEffect } from 'react';
 
 import { popupInputs, BookingArticle } from '../index';
 
-export default function Booking({ setIsBookingOpen }) {
+export default function Booking({ onPurchaseClick }) {
   const handleClick = () => {
-    setIsBookingOpen((prev) => !prev);
+    onPurchaseClick((prev) => !prev);
   };
 
   const handleKeyDown = (event) => {

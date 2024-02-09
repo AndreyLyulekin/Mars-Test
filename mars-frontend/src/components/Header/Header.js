@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { logo, menuItems, ContextMenu } from '../index';
 
-export default function Header({ setIsBookingOpen }) {
+export default function Header({ onPurchaseClick }) {
   const [isContextMenuOpened, setIsContextMenuOpened] = useState(false);
 
   const handleBuyCLick = () => {
-    setIsBookingOpen((prev) => !prev);
+    onPurchaseClick((prev) => !prev);
   };
 
   const handleBurgerCLick = () => {

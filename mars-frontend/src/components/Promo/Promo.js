@@ -18,10 +18,7 @@ export default function Promo() {
             autoPlay>
             <source src={bgTextClip}></source>
           </video>
-          <svg
-            className='clipped-svg'
-            height='100%'
-            width='100%'>
+          <svg className='clipped-svg'>
             <clipPath
               id='text-overlay'
               width='100%'

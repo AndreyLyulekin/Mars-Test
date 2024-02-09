@@ -25,9 +25,6 @@
   letter-spacing: -0.09rem;
   outline: none;
 }
-.booking__input::-webkit-calendar-picker-indicator {
-  display: none;
-}
 .booking__line {
   margin-top: 10px;
   width: 100%;
@@ -48,4 +45,16 @@
   position: absolute;
   bottom: 3px;
   right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .booking__buy-btn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .booking__article {
+    width: 100%;
+  }
 }

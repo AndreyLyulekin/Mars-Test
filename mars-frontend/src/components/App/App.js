@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Header, Promo, starsBgPosition, Booking } from '../index';
 
 export default function App() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth / 3);
+  const [windowWidth, setWindowWidth] = useState(() => window.innerWidth / 3);
   const [bgPosition, setBgPosition] = useState(0);
   const [isBookingOpen, setIsBookingOpen] = useState(false);
   const [isPageLoading, setIsPageLoading] = useState(false);
@@ -32,12 +32,26 @@ export default function App() {
       window.removeEventListener('mousemove', handleMouseMoveWithDelay);
     };
   }, [windowWidth]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsPageLoading(true);
+    }, 1000);
+  }, []);
   return (
-    <div className={`app ${starsBgPosition[bgPosition]}`}>
-      <div className='app__mistBg' />
-      <Header onPurchaseClick={setIsBookingOpen} />
-      <Promo />
-      {isBookingOpen && <Booking onPurchaseClick={setIsBookingOpen} />}
-    </div>
+    <>
+      {isPageLoading ? (
+        <div className={`app ${starsBgPosition[bgPosition]}`}>
+          <div className='app__mistBg' />
+          <Header onPurchaseClick={setIsBookingOpen} />
+          <Promo />
+          {isBookingOpen && <Booking onPurchaseClick={setIsBookingOpen} />}
+        </div>
+      ) : (
+        <div className='app__preloaderBg'>
+          <div className='app__preloader' />
+        </div>
+      )}
+    </>
   );
 }

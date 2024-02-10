@@ -1,92 +1,3 @@
-@-webkit-keyframes growHeight {
-  0% {
-    height: 5px;
-  }
-  100% {
-    height: 605px;
-  }
-}
-
-@keyframes growHeight {
-  0% {
-    height: 5px;
-  }
-  100% {
-    height: 605px;
-  }
-}
-
-@keyframes growHeightMediumPc {
-  0% {
-    height: 5px;
-  }
-  100% {
-    height: 485px;
-  }
-}
-
-@keyframes growHeightMinPc {
-  0% {
-    height: 5px;
-  }
-  100% {
-    height: 420px;
-  }
-}
-
-@keyframes growHeightMaxTablet {
-  0% {
-    height: 5px;
-  }
-  100% {
-    height: 350px;
-  }
-}
-
-@keyframes growHeightMidTablet {
-  0% {
-    height: 5px;
-  }
-  100% {
-    height: 280px;
-  }
-}
-
-@keyframes growHeightMaxPhone {
-  0% {
-    height: 5px;
-  }
-  100% {
-    height: 235px;
-  }
-}
-
-@keyframes growHeightMinPhone {
-  0% {
-    height: 5px;
-  }
-  100% {
-    height: 190px;
-  }
-}
-@-webkit-keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .promo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,6 +54,8 @@
 .clipped-text {
   font-family: 'Bebas Neue';
   font-weight: bold;
+  -webkit-transform: translate(-24px, -585px);
+  -ms-transform: translate(-24px, -585px);
   transform: translate(-24px, -585px);
   font-weight: 700;
   font-size: 715.25px;
@@ -152,6 +65,8 @@
 
 @media screen and (min-width: 1441px) {
   .app {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background-repeat: repeat-x;
   }
@@ -160,12 +75,16 @@
   }
   .promo {
     padding: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 }
 
 @media screen and (max-width: 1439px) {
   .promo {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     max-width: 100%;
     padding: 0;
@@ -175,6 +94,8 @@
     animation: growHeightMediumPc 1s forwards;
   }
   .clipped-text {
+    -webkit-transform: translate(-24px, -440px);
+    -ms-transform: translate(-24px, -440px);
     transform: translate(-24px, -440px);
     font-size: 550px;
     line-height: 550px;
@@ -191,6 +112,8 @@
   }
 
   .clipped-text {
+    -webkit-transform: translate(-15px, -430px);
+    -ms-transform: translate(-15px, -430px);
     transform: translate(-15px, -430px);
     font-size: 500px;
     line-height: 500px;
@@ -204,6 +127,8 @@
 
 @media screen and (max-width: 1023px) {
   .clipped-text {
+    -webkit-transform: translate(-15px, -340px);
+    -ms-transform: translate(-15px, -340px);
     transform: translate(-15px, -340px);
     font-size: 400px;
     line-height: 400px;
@@ -217,6 +142,8 @@
 
 @media screen and (max-width: 800px) {
   .clipped-text {
+    -webkit-transform: translate(-15px, -250px);
+    -ms-transform: translate(-15px, -250px);
     transform: translate(-15px, -250px);
     font-size: 300px;
     line-height: 300px;
@@ -233,6 +160,8 @@
     font-size: 24px;
   }
   .clipped-text {
+    -webkit-transform: translate(-15px, -200px);
+    -ms-transform: translate(-15px, -200px);
     transform: translate(-15px, -200px);
     font-size: 240px;
     line-height: 240px;
@@ -246,6 +175,8 @@
 
 @media screen and (max-width: 480px) {
   .clipped-text {
+    -webkit-transform: translate(-5px, -130px);
+    -ms-transform: translate(-5px, -130px);
     transform: translate(-5px, -130px);
     font-size: 160px;
     line-height: 160px;

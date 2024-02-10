@@ -34,9 +34,7 @@ export default function App() {
   }, [windowWidth]);
 
   useEffect(() => {
-    setTimeout(() => {
-      setIsPageLoading(true);
-    }, 1000);
+    setIsPageLoading(true);
   }, []);
   return (
     <>

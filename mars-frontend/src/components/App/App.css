@@ -1,6 +1,6 @@
 .app {
   width: 100%;
-  background-image: url('../../images/Space-Stars-BG.png');
+  background-image: url('https://educourseshub.com/wp-content/uploads/2024/02/Space-Stars-BG-4.png');
   background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,7 +38,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url('http://localhost:8888/wp-content/uploads/2024/02/Mist.png');
+  background-image: url('https://educourseshub.com/wp-content/uploads/2024/02/Mist-3.png');
   background-position: right top;
   offset: 0;
   -webkit-animation: bgRightToLeft 3s ease-in-out;
@@ -48,7 +48,7 @@
   filter: brightness(0.5);
 }
 .app__preloaderBg {
-  background-image: url('../../images/Space-Stars-BG.png');
+  background-image: url('https://educourseshub.com/wp-content/uploads/2024/02/Space-Stars-BG-4.png');
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;

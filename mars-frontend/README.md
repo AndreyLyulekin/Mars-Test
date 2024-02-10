@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+Репозиторий с кодом: https://github.com/AndreyLyulekin/Mars-Test/tree/main/mars-frontend
+Деплой фронтенд части на Gh-Pages: https://andreylyulekin.github.io/Mars-Test/
+Загрузка видео и некоторых тяжелых картинок производится с задеплоинного мной ранее Вордпресс сервера (https://educourseshub.com/)
+Локально при разработке использовал вордпресс сервер (в папке Wordpress), запускал через MAMP на 8888 порту, но в итоге ссылки на медиафайлы решил оставить с деплоенного сервера
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Комментарий о трудностях:
+Единственная трудность с которой столкнулся, это видео в тексте, сначала я сделал это через mix-blend-mode, столкнулся с багом что бэкграунд звезд и дымки тоже смешивался с бэкграундом текста "Марс",
+но поигравшись с настройками этих бэкграундов проблему удалось решить, далее когда перешел к адаптации верстки под разные разрешения, столкнулся с огромной проблемой, тк для mix-blend-mode использовалась вложенность,
+и размеры контейнеров постоянно разьезжались, пришлось переделывать через clip-path, со свойством я был знаком, и с него я и начал изначально делать, но с первого раза не получилось вовсе, в процессе переделки на clip-path
+наткнулся на пример который очень помог (https://codepen.io/jeremyfaucher/pen/QWmwWPO), сделал по подобию
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Остальные комментарии:
+Плавающий бэкграунд реализовал с тротлингом для оптимизации, что-бы не происходили пересчеты на каждое движение мыши на 1px, поставил задержку 50мс,
+так-же добавил контекстное меню на разрешения до 1024px и закрыть которое можно при клике на оверлей,
+добавил валидацию на инпут с кол-вом билетов - нельзя поставить меньше 1го,
+добавил прелоадер к сайту,
+добавил заакрытие попапа по клавище "esc"

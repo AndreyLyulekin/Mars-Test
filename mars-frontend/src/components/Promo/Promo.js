@@ -1,4 +1,4 @@
-import { arrow, bgTextClip } from '../index';
+import { arrow } from '../index';
 
 export default function Promo() {
   return (
@@ -10,21 +10,21 @@ export default function Promo() {
       />
       <div className='promo__container-text'>
         <span className='promo__description'>Точка назначения:</span>
-        <div className='wrapper'>
+        <div className='promo__wrapper'>
           <video
-            className='clipped-video'
+            className='promo__clipped-video'
             muted
             loop
             autoPlay>
-            <source src={bgTextClip}></source>
+            <source src='https://educourseshub.com/wp-content/uploads/2024/02/Mars-bg-clip-text-3.m4v'></source>
           </video>
-          <svg className='clipped-svg'>
+          <svg className='promo__clipped-svg'>
             <clipPath
               id='text-overlay'
               width='100%'
               height='100%'>
               <text
-                className='clipped-text'
+                className='promo__clipped-text'
                 id='title'
                 dy='1.58em'>
                 MAPC

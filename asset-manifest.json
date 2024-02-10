@@ -1,9 +1,7 @@
 {
   "files": {
-    "main.css": "/Mars-Test/static/css/main.406619a2.css",
-    "main.js": "/Mars-Test/static/js/main.362e3c39.js",
-    "static/media/Mars-bg-clip-text.m4v": "/Mars-Test/static/media/Mars-bg-clip-text.3843458ad9b22dec6f69.m4v",
-    "static/media/Space-Stars-BG.png": "/Mars-Test/static/media/Space-Stars-BG.de36b45a1908ad68cd6c.png",
+    "main.css": "/Mars-Test/static/css/main.d16763bb.css",
+    "main.js": "/Mars-Test/static/js/main.83665b1f.js",
     "static/media/BebasNeue Bold.ttf": "/Mars-Test/static/media/BebasNeue Bold.ea0a2d99a89950317a4f.ttf",
     "static/media/BebasNeue Bold.otf": "/Mars-Test/static/media/BebasNeue Bold.a20da9a8676904a41a73.otf",
     "static/media/Mars-logo.svg": "/Mars-Test/static/media/Mars-logo.6cea588b217aaf5a46bda3d3d97fdb54.svg",
@@ -11,11 +9,11 @@
     "static/media/burgerNotOpened.svg": "/Mars-Test/static/media/burgerNotOpened.b5d70d9edc6bfc2e168a.svg",
     "static/media/close.svg": "/Mars-Test/static/media/close.85bbdf9e8dfb7969c8d0.svg",
     "static/media/Arrow-down-promo.svg": "/Mars-Test/static/media/Arrow-down-promo.cc68c07dfe2be69b78f56a24f97da57b.svg",
-    "main.406619a2.css.map": "/Mars-Test/static/css/main.406619a2.css.map",
-    "main.362e3c39.js.map": "/Mars-Test/static/js/main.362e3c39.js.map"
+    "main.d16763bb.css.map": "/Mars-Test/static/css/main.d16763bb.css.map",
+    "main.83665b1f.js.map": "/Mars-Test/static/js/main.83665b1f.js.map"
   },
   "entrypoints": [
-    "static/css/main.406619a2.css",
-    "static/js/main.362e3c39.js"
+    "static/css/main.d16763bb.css",
+    "static/js/main.83665b1f.js"
   ]
 }

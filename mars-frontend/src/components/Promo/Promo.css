@@ -16,6 +16,8 @@
 }
 
 .promo__container-text {
+  display: flex;
+  flex-direction: column;
   margin-left: 25px;
   padding-top: 14px;
 }
@@ -64,6 +66,25 @@
   letter-spacing: -0.02em;
 }
 
+.text-with-background {
+  background-image: url('../../images/mars-1.jpg');
+  background-position: right center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  animation: bgLeftToRightAndCenter 160s forwards;
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  user-select: none;
+  font-size: 715px;
+  line-height: 715px;
+  -webkit-transform: translate(-24px, -570px);
+  -ms-transform: translate(-24px, -570px);
+  transform: translate(-24px, -570px);
+}
+
 @media screen and (min-width: 1441px) {
   .app {
     -webkit-box-align: center;
@@ -105,6 +126,13 @@
   .promo__container-text {
     width: 70%;
   }
+  .text-with-background {
+    font-size: 370px;
+    line-height: 370px;
+    -webkit-transform: translate(-20px, -250px);
+    -ms-transform: translate(-20px, -250px);
+    transform: translate(-20px, -250px);
+  }
 }
 
 @media screen and (max-width: 1250px) {
@@ -139,6 +167,14 @@
     -webkit-animation: growHeightMaxTablet 1s forwards;
     animation: growHeightMaxTablet 1s forwards;
   }
+
+  .text-with-background {
+    font-size: 300px;
+    line-height: 300px;
+    -webkit-transform: translate(-20px, -200px);
+    -ms-transform: translate(-20px, -200px);
+    transform: translate(-20px, -200px);
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -153,6 +189,14 @@
   .promo__bgArrow {
     -webkit-animation: growHeightMidTablet 1s forwards;
     animation: growHeightMidTablet 1s forwards;
+  }
+
+  .text-with-background {
+    font-size: 220px;
+    line-height: 220px;
+    -webkit-transform: translate(-20px, -170px);
+    -ms-transform: translate(-20px, -170px);
+    transform: translate(-20px, -170px);
   }
 }
 
@@ -172,6 +216,14 @@
     -webkit-animation: growHeightMaxPhone 1s forwards;
     animation: growHeightMaxPhone 1s forwards;
   }
+
+  .text-with-background {
+    font-size: 170px;
+    line-height: 170px;
+    -webkit-transform: translate(0, -140px);
+    -ms-transform: translate(0, -140px);
+    transform: translate(0, -140px);
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -186,5 +238,13 @@
   .promo__bgArrow {
     -webkit-animation: growHeightMinPhone 1s forwards;
     animation: growHeightMinPhone 1s forwards;
+  }
+
+  .text-with-background {
+    font-size: 120px;
+    line-height: 120px;
+    -webkit-transform: translate(0, -80px);
+    -ms-transform: translate(0, -80px);
+    transform: translate(0, -80px);
   }
 }

@@ -23,11 +23,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 30px;
-  -moz-column-gap: 30px;
-  column-gap: 30px;
   list-style: none;
 }
+
+.header__menu-item {
+  margin-left: 30px;
+}
+
 .header__menu-link {
   font-weight: 500;
   font-size: 16px;
@@ -67,16 +69,18 @@
     padding: 30px 60px;
     max-width: calc(100% - 120px);
   }
-  .header__menu-ul {
-    -webkit-column-gap: 15px;
-    -moz-column-gap: 15px;
-    column-gap: 15px;
+  .header__menu-item {
+    margin-left: 15px;
   }
 }
 
 @media screen and (max-width: 1023px) {
   .header__menu-ul {
     display: none;
+  }
+
+  .header__menu-item {
+    margin-left: 0;
   }
 
   .header__menu_btn-buy {

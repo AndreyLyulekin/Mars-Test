@@ -9,6 +9,7 @@ body {
 
 @import './vendor/normalize.css';
 @import './util-styles/styles.css';
+@import './util-styles/animation.css';
 @import './components/App/App.css';
 @import './components/Header/Header.css';
 @import './components/Promo/Promo.css';

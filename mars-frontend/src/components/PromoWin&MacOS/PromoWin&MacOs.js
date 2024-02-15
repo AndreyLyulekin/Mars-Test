@@ -1,3 +1,5 @@
+import bgVideo from '../../images/videoplayback.webm';
+
 export const MobileComponent = () => {
   return <h2 className='text-with-background'>MAPC</h2>;
 };
@@ -10,7 +12,7 @@ export const DesktopComponent = () => {
         muted
         loop
         autoPlay>
-        <source src='https://educourseshub.com/wp-content/uploads/2024/02/Mars-bg-clip-text-3.m4v'></source>
+        <source src={bgVideo}></source>
       </video>
       <svg className='promo__clipped-svg'>
         <clipPath

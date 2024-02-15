@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/Mars-Test/static/css/main.6bd24faa.css",
-    "main.js": "/Mars-Test/static/js/main.a1bcd7ba.js",
+    "main.js": "/Mars-Test/static/js/main.dd52334e.js",
+    "static/media/videoplayback.webm": "/Mars-Test/static/media/videoplayback.359c86fde9ff7ebe5df5.webm",
     "static/media/mars-1.jpg": "/Mars-Test/static/media/mars-1.0a534125bb63a226ee0c.jpg",
     "static/media/BebasNeue Bold.ttf": "/Mars-Test/static/media/BebasNeue Bold.ea0a2d99a89950317a4f.ttf",
     "static/media/BebasNeue Bold.otf": "/Mars-Test/static/media/BebasNeue Bold.a20da9a8676904a41a73.otf",
@@ -11,10 +12,10 @@
     "static/media/close.svg": "/Mars-Test/static/media/close.85bbdf9e8dfb7969c8d0.svg",
     "static/media/arrowDownPromo.svg": "/Mars-Test/static/media/arrowDownPromo.cc68c07dfe2be69b78f56a24f97da57b.svg",
     "main.6bd24faa.css.map": "/Mars-Test/static/css/main.6bd24faa.css.map",
-    "main.a1bcd7ba.js.map": "/Mars-Test/static/js/main.a1bcd7ba.js.map"
+    "main.dd52334e.js.map": "/Mars-Test/static/js/main.dd52334e.js.map"
   },
   "entrypoints": [
     "static/css/main.6bd24faa.css",
-    "static/js/main.a1bcd7ba.js"
+    "static/js/main.dd52334e.js"
   ]
 }
